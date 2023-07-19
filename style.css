@@ -1,31 +1,6 @@
 *{margin:0; background-color: #fff8de;}
 
 
-/* blocking msg for small devices*/
-@media (max-width: 768px) {
-    .desktop-message {
-        display: block;
-        text-align: center;
-        background-color: #f8f8f8;
-        color: #333;
-        padding: 10px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*index_page*/

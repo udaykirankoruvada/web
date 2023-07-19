@@ -21,9 +21,10 @@
             <span><a href="">Pricing</a></span>
         </div>
     </div>
-    <div class="desktop-message">
-        This webpage is best viewed on a desktop or larger screen. Please open it on a desktop for the optimal experience.
+    <div id="message" style="display: none;">
+        This website is best viewed on a desktop or larger screen. Please open it on a desktop for the best experience.
     </div>
+
     <div class="home_services">
         <div class="home1" id="addMember">
             <div class="home">
@@ -130,5 +131,24 @@
     </div>
     <br><br>
  </div>
+
+
+ <script>
+    // Function to check if the device is a mobile phone or tablet
+    function isMobileOrTablet() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Function to display the message if it's a mobile or tablet device
+    function showMessageForMobile() {
+        var messageDiv = document.getElementById("message");
+        if (isMobileOrTablet()) {
+            messageDiv.style.display = "block";
+        }
+    }
+
+    // Call the function when the page loads
+    showMessageForMobile();
+</script>
 </body>
 </html>
