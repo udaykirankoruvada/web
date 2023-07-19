@@ -143,7 +143,12 @@
     function showMessageForMobile() {
         var messageDiv = document.getElementById("message");
         if (isMobileOrTablet()) {
-            messageDiv.style.display = "block";
+            // messageDiv.style.display = "block";
+            alert("This website is not optimized for mobile devices. Please open it on a desktop for the best experience.");
+            alert("You can download our app and the better experience in mobiles and tablets")
+
+                // Close the web page after the user clicks OK on the alert
+                window.close();
         }
     }
 
